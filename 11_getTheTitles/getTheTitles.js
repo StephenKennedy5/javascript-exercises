@@ -1,8 +1,7 @@
 const getTheTitles = function(books) {
-    let array = []
-    for (let i = 0; i < books.length; i ++) {
-        array.push(books[i].title)
-    }
+    // map fxn
+    const array = books.map(book => book.title);
+    
     return array
 };
 

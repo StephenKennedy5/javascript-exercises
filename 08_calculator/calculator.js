@@ -7,18 +7,13 @@ const subtract = function(num1,num2) {
 };
 
 const sum = function(array) {
-	let sumarray = 0;
-  for (let i = 0; i < array.length; i++) {
-    sumarray += array[i];
-  }
+  const sumarray = array.reduce((total,currentVal) => total += currentVal,0)
   return sumarray;
 };
 
 const multiply = function(array) {
-  let multiplyarray = 1;
-  for (let i = 0; i < array.length; i++) {
-    multiplyarray *= array[i]
-  }
+  const multiplyarray = array.reduce((total,currentVal) => total *= currentVal,1)
+
   return multiplyarray;
 };
 
